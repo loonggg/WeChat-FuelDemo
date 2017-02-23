@@ -1,0 +1,82 @@
+<!--index.wxml-->
+<view class="index-bg">
+    <image class="home-title-image" src="../../images/fuel_consumption_calculator.png"></image>
+    <view class="home-rect">
+        <view class="home-view-item">
+            <view class="home-rect-child-view">
+                <text class="home-text">上次加满油后行驶的公里数:</text>
+            </view>
+            <view class="rect-vertical-line"></view>
+            <view class="home-rect-child-view">
+                <input bindinput="bindOneKmInput" value="{{oneKm}}" type="digit"/>
+            </view>
+        </view>
+        <view class="rect-horizontal-line" />
+         <view class="home-view-item">
+            <view class="home-rect-child-view">
+                <text class="home-text">邮箱加满几公升油:</text>
+            </view>
+            <view class="rect-vertical-line"></view>
+            <view class="home-rect-child-view">
+                <input bindinput="bindOneOilInput" value="{{oneOil}}" type="digit"/>
+            </view>
+        </view>
+        <view class="rect-horizontal-line" />
+         <view class="home-view-item">
+            <view class="home-rect-child-view">
+                <text class="home-text">油价/公升:</text>
+            </view>
+            <view class="rect-vertical-line"></view>
+            <view class="home-rect-child-view">
+                <input bindinput="bindOnePriceInput" value="{{onePrice}}" type=" digit"/>
+            </view>
+        </view>
+    </view>
+    <view class="home-button-view">
+        <view class="home-button" bindtap="calOneMethod">
+            <text class="home-button-text">计算</text>
+        </view>
+        <view class="home-button">
+            <text class="home-button-text" bindtap="resetOneMethod">重置</text>
+        </view>
+    </view>
+     <view class="home-rect">
+        <view class="home-view-item">
+            <view class="home-rect-child-view">
+                <text class="home-text">上次加满油后行驶的公里数:</text>
+            </view>
+            <view class="rect-vertical-line"></view>
+            <view class="home-rect-child-view">
+                <input bindinput="bindTwoKmInput" value="{{twoKm}}" type=" digit"/>
+            </view>
+        </view>
+        <view class="rect-horizontal-line" />
+         <view class="home-view-item">
+            <view class="home-rect-child-view">
+                <text class="home-text">总共花费的油钱:</text>
+            </view>
+            <view class="rect-vertical-line"></view>
+            <view class="home-rect-child-view">
+                <input bindinput="bindTwoTotalPriceInput" value="{{twoTotalPrice}}" type="digit"/>
+            </view>
+        </view>
+        <view class="rect-horizontal-line" />
+         <view class="home-view-item">
+            <view class="home-rect-child-view">
+                <text class="home-text">油价/公升:</text>
+            </view>
+            <view class="rect-vertical-line"></view>
+            <view class="home-rect-child-view">
+                <input bindinput="bindTwoPriceInput" value="{{twoPrice}}" type="digit"/>
+            </view>
+        </view>
+    </view>
+    <view class="home-button-view">
+        <view class="home-button" bindtap="calTwoMethod">
+            <text class="home-button-text">计算</text>
+        </view>
+        <view class="home-button" bindtap="resetTwoMethod">
+            <text class="home-button-text">重置</text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,57 @@
+<view class="index-bg detail-padding">
+   <view class="home-rect">
+        <view class="home-view-item">
+            <view class="home-rect-child-view">
+                <text class="home-text">每公升油可以行驶:</text>
+            </view>
+            <view class="rect-vertical-line"></view>
+            <view class="home-rect-child-view">
+               <text class="home-text">{{kmOil}}公里</text>
+            </view>
+        </view>
+        <view class="rect-horizontal-line" />
+         <view class="home-view-item">
+            <view class="home-rect-child-view">
+                <text class="home-text">百公里油耗:</text>
+            </view>
+            <view class="rect-vertical-line"></view>
+            <view class="home-rect-child-view">
+              <text class="home-text">{{oilKm}}公升</text>
+            </view>
+        </view>
+        <view class="rect-horizontal-line" />
+         <view class="home-view-item">
+            <view class="home-rect-child-view">
+                <text class="home-text">每公里的油钱是:</text>
+            </view>
+            <view class="rect-vertical-line"></view>
+            <view class="home-rect-child-view">
+              <text class="home-text">{{priceKm}}元</text>
+            </view>
+        </view>
+        <view class="rect-horizontal-line" />
+         <view class="home-view-item">
+            <view class="home-rect-child-view">
+                <text class="home-text">选择保存时间:</text>
+            </view>
+            <view class="rect-vertical-line"></view>
+            <view class="home-rect-child-view">
+                <picker mode="date" value="{{date}}" start="2015-09-01" end="2100-09-01" bindchange="bindDateChange">
+                 <view class="home-text">
+      {{date}}
+    </view>
+  </picker>
+  
+      <picker class="picker-margin" mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+       <view class="home-text">
+      {{time}}
+    </view>
+  </picker>
+
+            </view>
+        </view>
+    </view>
+     <view class="home-button save-button" bindtap="bindSaveTap" hidden="{{isHidden}}">
+        <text class="home-button-text">保存</text>
+    </view>
+</view>

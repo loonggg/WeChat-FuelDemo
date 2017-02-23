@@ -1,0 +1,23 @@
+<!--logs.wxml-->
+<view class="bg">
+    <scroll-view scroll-y="true">
+        <block wx:for="{{logs}}" wx:for-item="log">
+            <view class="item-view" data-log="{{log}}" bindtap="detail">
+                <view class = "item-left-view">油耗:{{log.oilKm/100}}</view>
+                <view class="item-right-view">
+                    <view class="item-rigth-text-view">
+                        <text class="item-right-text">油量:{{log.oilMass}}公升</text>
+                        <text class="item-right-text">里程:{{log.oilMass/log.oilKm}}km</text>
+                    </view>
+                    <view class="item-rigth-text-view">
+                        <text class="item-right-orange-text">¥{{log.oilTotalPrice}}(总花费)</text>
+                        <text class="item-right-text">油价:{{log.oilPrice}}</text>
+                    </view>
+                    <view class="item-rigth-text-view">
+                        <text class="item-right-text">时间:{{log.date}}</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </scroll-view>
+</view>

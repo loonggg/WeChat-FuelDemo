@@ -1,0 +1,13 @@
+/* pages/detail/detail.wxss */
+page{
+  height: 100%;
+}
+.detail-padding{
+  padding-top: 80rpx;
+}
+.picker-margin{
+  margin-top: 15rpx;
+}
+.save-button{
+  margin-top:50rpx;
+}

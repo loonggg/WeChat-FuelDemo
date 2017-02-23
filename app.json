@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/record/record",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#82858b",
+    "selectedColor":"#157efb",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"images/calculator_menu_normal.png",
+      "selectedIconPath":"images/calculator_menu_pressed.png"
+    }, {
+      "pagePath": "pages/record/record",
+      "text": "记录",
+      "iconPath":"images/record_menu_normal.png",
+      "selectedIconPath":"images/record_menu_pressed.png"
+    }]
+  }
+}
